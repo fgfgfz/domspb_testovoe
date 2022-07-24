@@ -33,7 +33,7 @@ class XmlParser:
 
     @classmethod
     def form_new_head(cls, file):
-        excel_data = pd.read_excel(file)
+        excel_data = pd.read_excel(file, sheet_name='Лист1')
         excel_data_dict = excel_data.to_dict()
         length = len(excel_data_dict['Name'])
 
